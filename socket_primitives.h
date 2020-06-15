@@ -49,7 +49,7 @@ typedef enum {
 
 typedef struct Socket {
     SocketType socket_type;
-    uint16_t file_descriptor;
+    int file_descriptor;
     Address_t address;
     Port_t port;
     ListenStatus listening = LS_NOT_LISTENING;
